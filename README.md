@@ -1,7 +1,8 @@
 # GAME-HUB
 
-**About the game**
-This Project is on  a Game Hub which will include 4 objectively and functionally different games which are fun to play either with others or alone.  In this project we have included a Casino game , Connect-4 , Tic-Tac-Toe and the Snake game where you can select which game you want to play and when you are done with the game you can switch to a different game. Explanation on the selection of a game:-In the code we used a switch case function where it allows you to select between 1-4 for a game from the list. 
+**About the game** <br>
+This Project is on  a Game Hub which will include 4 objectively and functionally different games which are fun to play either with others or alone.  In this project we have included a Casino game , Connect-4 , Tic-Tac-Toe and the Snake game where you can select which game you want to play and when you are done with the game you can switch to a different game. 
+**Explanation on the selection of a game** : In the code we used a switch case function where it allows you to select between 1-4 for a game from the list. <br>
 The switch statement is used to perform different actions based on the value of choice. Here's what each case does:
 case 1: Calls a function casino() which presumably represents a casino game.
 case 2: Calls a function connect4() for playing Connect Four.
@@ -10,7 +11,7 @@ case 4: Calls a function tic_tac_toe() for playing Tic-Tac-Toe.
 case 5: Displays a message and returns 0, which effectively quits the program.If the user enters a number other than 1, 2, 3, 4, or 5, the default case is executed. It prints a message, "Please enter a valid choice."
 
 
-**Explanation of Casino Game**
+**Explanation of Casino Game** <br>
 This is a simple text-based casino game implemented in C. The game is called MADZCASINO and offers features such as depositing funds, checking balance, placing bets, viewing a history of operations, and quitting the game with end results. The player interacts with the game through a menu system, and the results are tracked, including the total amount won, lost, and win percentage. 
 Code uses :  
   - Structures to organize player information 
