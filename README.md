@@ -91,11 +91,11 @@ This C program implements a 3x3 Tic-Tac-Toe game using structures and arrays. Th
      - Indicates successful program execution.
 
 
-**Contributors ** <br>
-  Prajval:-  Casino game, Switch case and ppt
-  Ketan:-  Connect4 game , ppt
-  Lalith:-  tic-tac-toe
-  Manasa:-  Snake Game
+**Contributors** <br>
+  Prajval:-  Casino game, Switch case and ppt <br>
+  Ketan:-  Connect4 game , ppt <br>
+  Lalith:-  tic-tac-toe <br>
+  Manasa:-  Snake Game <br>
 
 
 
