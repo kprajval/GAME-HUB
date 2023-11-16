@@ -1,6 +1,6 @@
 # GAME-HUB
 
-#About the game
+**About the game**
 This Project is on  a Game Hub which will include 4 objectively and functionally different games which are fun to play either with others or alone.  In this project we have included a Casino game , Connect-4 , Tic-Tac-Toe and the Snake game where you can select which game you want to play and when you are done with the game you can switch to a different game. Explanation on the selection of a game:-In the code we used a switch case function where it allows you to select between 1-4 for a game from the list. 
 The switch statement is used to perform different actions based on the value of choice. Here's what each case does:
 case 1: Calls a function casino() which presumably represents a casino game.
@@ -8,9 +8,9 @@ case 2: Calls a function connect4() for playing Connect Four.
 case 3: Calls a function snake() for playing the Snake game.
 case 4: Calls a function tic_tac_toe() for playing Tic-Tac-Toe.
 case 5: Displays a message and returns 0, which effectively quits the program.If the user enters a number other than 1, 2, 3, 4, or 5, the default case is executed. It prints a message, "Please enter a valid choice."
-![image](https://github.com/kprajval/GAME-HUB/assets/113627202/762265ed-7600-4271-9fd9-a679115ec52a)
 
-#Explanation of Casino Game
+
+**Explanation of Casino Game**
 This is a simple text-based casino game implemented in C. The game is called MADZCASINO and offers features such as depositing funds, checking balance, placing bets, viewing a history of operations, and quitting the game with end results. The player interacts with the game through a menu system, and the results are tracked, including the total amount won, lost, and win percentage. 
 Code uses :  
   - Structures to organize player information 
@@ -22,22 +22,20 @@ Functioning :
   3. Deposit:- If the player chooses to deposit money, they are prompted to enter an amount, and the program updates the player's balance accordingly. The deposit operation is recorded in the player's history.
   4. Check Balance:- The player can check their current balance at any time during the game.
   5. Place a Bet:- The player can place a bet by entering an amount and making a guess between 0 and 21. The outcome of the bet is determined randomly, and the player's balance is adjusted accordingly. The bet               operation and result are recorded in the player's history.
-![image](https://github.com/kprajval/GAME-HUB/assets/113627202/41323182-b995-4c42-b717-9ff89e414fde)
   6. View History:- The player can view a history of their operations, including details such as the type of operation (e.g., deposit, bet) and the result (e.g., win, loss).
   7. Quitting the Game:- If the player chooses to quit, the program displays final results, including the total balance (whether the player won or lost), the number of wins and losses, and the luck percentage                (percentage of wins out of total games played). The program then exits.
   10.Random Number Generation:- The code uses the `rand()` function to generate random numbers for simulating the outcome of bets.
   11. Dynamic Memory Allocation:- Dynamic memory allocation is used to create history nodes and duplicate strings for storing operation details.
-![image](https://github.com/kprajval/GAME-HUB/assets/113627202/2c2d5b6a-7a23-42ba-a119-595321626e6b)
+      
 
-#Explanation of Snake Game:-
+**Explanation of Snake Game**
 The code includes various libraries for handling input, time, and console functions. It defines constants for arrow key codes, as well as global variables, structures, and function prototypes.The main function initializes the game and sets up the initial state. It creates the snake, the game board border, and initializes the food. The game loop is handled by the Move function, which continuously updates the snake's position based on user input.The snake can move in four directions: UP, DOWN, LEFT, and RIGHT. It grows in length when it consumes food. The game ends if the snake collides with the border or itself. The player has three lives, and the final score is recorded with the player's name, date, and time in a file called "record.txt."There are various utility functions for handling console output, delay, checking collisions, and updating the score. The game also provides instructions for the player.In summary, it's a simple console-based Snake game with basic features and scoring system
 
 Arrays:bend array: This array of coordinate structures is used to store the coordinates of bends in the snake. As the snake changes direction, bends occur, and their positions need to be remembered to properly draw the snake.body array: Similar to the bend array, the body array is an array of coordinate structures used to store the positions of the snake's body segments. This array is crucial for maintaining the snake's length and checking for collisions.food array: The food array is used to store the coordinates of the food. This information is essential for checking whether the snake has consumed the food, and if so, generating new coordinates for the next food item.Structures:coordinate structure: This structure is used to represent a 2D coordinate on the game board. It includes attributes for the x and y positions, as well as the direction the snake is moving. Instances of this structure are used for the snake's head, bends, body, and food.head structure: The head structure represents the current position and direction of the snake's head. It is of type coordinate and is used to keep track of the snake's movement.
 When the snake's head reaches the current food position (head.x == food.x && head.y == food.y), a new food item is generated, and the snake's length is increased.The srand(a) function initializes the random number generator with the current time to ensure a different sequence of random numbers each time the program runs.The rand() % 70 generates a random number between 0 and 69, and similar logic is applied for the y coordinate.If the generated x coordinate is less than or equal to 10, it is adjusted to ensure that the food does not appear too close to the left border. The same adjustment is applied to the y coordinate.If the food's x coordinate is 0, it means that the food needs to be initialized for the first time, so random coordinates are generated as described above.
 
-![image](https://github.com/kprajval/GAME-HUB/assets/113627202/fb80d937-0e12-4779-980b-427249767abb)
 
-#Explanation of Connect-4 :-
+**Explanation of Connect-4**
 The code maintains the core functionality of a Connect 4 game, allowing two players to take turns making moves, checking for wins, and ensuring that invalid moves are not allowed. The implementation uses linked lists within each column to handle the placement of pieces. The `checkWin` function is a placeholder and should be implemented to detect winning conditions based on the rules of Connect 4.
 
   1. Data Structures:
@@ -61,9 +59,9 @@ The code maintains the core functionality of a Connect 4 game, allowing two play
   8. Memory Deallocation:
    - After the game is over, the code frees the allocated memory for the cells in each column's linked list and for        
    the`Connect4Game` structure itself.
-![image](https://github.com/kprajval/GAME-HUB/assets/113627202/e2aea6f6-eebd-4d74-9970-b01433894fe2)
 
-#Explanation of Tic-Tac-Toe:-
+
+**Explanation of Tic-Tac-Toe**
 This C program implements a 3x3 Tic-Tac-Toe game using structures and arrays. The `TicTacToe` structure represents the game board, and functions are defined to initialize the board, display it, allow players (X and O) to make moves, and check for a winning condition or a draw after each move. The program utilizes a 2D array to store the game board. The main loop of the game prompts players for input in the form of row and column coordinates, validates the input, and updates the board accordingly. The game continues until there is a winner or a draw, and the final board state is displayed. The code demonstrates the use of structures, arrays, loops, conditionals, and user input handling in a simple game scenario.
   1. Header Files and Constants:
      - Includes standard input-output and boolean header files.
@@ -89,16 +87,14 @@ This C program implements a 3x3 Tic-Tac-Toe game using structures and arrays. Th
   9. Final Display:
      - Displays the final state of the Tic-Tac-Toe board.
   10.Return Statement:
-     - Indicates successful program execution.![image](https://github.com/kprajval/GAME-HUB/assets/113627202/2db4e2b5-017c-4405-a8a3-9032085cba0a)
+     - Indicates successful program execution.
 
-![image](https://github.com/kprajval/GAME-HUB/assets/113627202/6862bd70-0c7d-4693-b99f-2d38c8db5931)
 
-#Contributors :
+**Contributors **
   Prajval:-  Casino game, Switch case and ppt
   Ketan:-  Connect4 game , ppt
   Lalith:-  tic-tac-toe
   Manasa:-  Snake Game
-![image](https://github.com/kprajval/GAME-HUB/assets/113627202/2c63b92d-21e2-4e5c-aaa1-006e762658e9)
 
 
 
